@@ -19,6 +19,3 @@ function findShort(s) {
     // Return the length of the shortest word
     return min;
 }
-// Example usage
-console.log(findShort("bitcoin take over the world maybe who knows")); // 3
-console.log(findShort("turns out random test cases are easier than writing out basic ones")); // 3
