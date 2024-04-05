@@ -1,0 +1,10 @@
+function findShort(s){
+  s = s.split(' ');
+  let min = s[0].length;
+  for (let i = 0; i < s.length; i++){
+    if(s[i].length < min) {
+      min = s[i].length;
+    }
+  }
+  return min;
+}
