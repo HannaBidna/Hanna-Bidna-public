@@ -8,3 +8,4 @@ function findShort(s){
   }
   return min;
 }
+console.log(findShort(s));
