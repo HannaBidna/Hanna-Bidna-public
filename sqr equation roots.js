@@ -1,12 +1,12 @@
-import { question } from `readline-sync`;
+var readlineSync = require('readline-sync');
 
-let a = parseFloat(question('Input a, please: '));
+let a = parseFloat(readlineSync.question('Input a, please: '));
 console.log('a = ' + a);
 
-let b = parseFloat(question('Input b, please: '));
+let b = parseFloat(readlineSync.question('Input b, please: '));
 console.log('b = ' + b);
 
-let c = parseFloat(question('Input c, please: '));
+let c = parseFloat(readlineSync.question('Input c, please: '));
 console.log('c = ' + c);
 
 let descrim = b**2 - 4*a*c;
