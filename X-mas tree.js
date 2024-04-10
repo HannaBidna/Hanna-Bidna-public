@@ -1,3 +1,5 @@
+//output the Christmas Tree from **
+
 function printXmasTree(height) {
     let tree = ''; 
     for (let i = 0; i < height; i += 1) {

@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://npm i --save-dev @types/readline-sync",
+            "request": "launch",
+            "url": "http://npm i --save-dev @types/readline-sync"
+        }
+    ]
+}
