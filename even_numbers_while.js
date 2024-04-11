@@ -2,7 +2,7 @@
 
 let i = 2;
 while (i < 30){
-    if (i !== 14 && i !== 18){
+    if (i%2 == 0 && i !== 14 && i !== 18){
         console.log(i)
     }  i +=1
 }
