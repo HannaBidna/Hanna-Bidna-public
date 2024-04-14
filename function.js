@@ -1,3 +1,4 @@
+
 function calculate(oper1, oper2, operation, rep) {
     let res = operation(oper1, oper2); //define res as an operatoin
      if (typeof rep === 'function') {  // check is the report defined as a function
