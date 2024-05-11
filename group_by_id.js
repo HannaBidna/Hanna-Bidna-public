@@ -1,15 +1,20 @@
 //Створіть функцію groupById(arr), яка створює з масиву об’єкт із ключом id та елементами масиву як значеннями.
 
-let users = [
-    {id: 'іван', name: "Іван Іванко", age: 20},
-    {id: 'ганна', name: "Ганна Іванко", age: 24},
-    {id: 'петро', name: "Петро Петренко", age: 31},
-  ];
-  
-  function groupById(arr){
-    let result = {};
-    result = arr.forEach(item => result[item.id] = item;
-        )}
+const people = [
+  { name: 'Oleksii', city: 'Kyiv' },
+  { name: 'Simona', city: 'Lviv' },
+  { name: 'Nastia', city: 'Kyiv' },
+];
+function groupByCity(arr){
+  let result = {};
+  arr.forEach(item => {
+    if(!result[item.city]){
+      result[item.city] = [];
+    }
+    result[item.city].push(item);
+    });
+  return result;    
+  }
 
-  let usersById = groupById(users);
-  console.log(usersById);
+let usersByCity = groupByCity(people);
+console.log(usersByCity);
