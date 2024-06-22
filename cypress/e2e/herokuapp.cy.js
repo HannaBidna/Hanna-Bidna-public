@@ -7,6 +7,8 @@ describe('The Internet Herokuapp Tests', () => {
       cy.get('.added-manually').should('be.visible');
       cy.get('.added-manually').click();
       cy.get('.added-manually').should('not.exist');
+      cy.get('button').contains('Add Element').click();
+      cy.get('button').contains('Delete').click();
     });
   
     it('Checkboxes', () => {
@@ -41,9 +43,10 @@ describe('The Internet Herokuapp Tests', () => {
   
     it('Hovers', () => {
       cy.visit(`${baseUrl}/hovers`);
-      cy.get('.figure').first().trigger('mouseover');
-      cy.get('.figcaption').first().should('be.visible').and('contain', 'name: user1');
+      cy.get('.figure').first().realHover();
+      cy.get('.figure').first().find('.figcaption').should('be.visible').and('contain', 'name: user1');
     });
+  
   
     it('Inputs', () => {
       cy.visit(`${baseUrl}/inputs`);
