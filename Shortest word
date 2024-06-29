@@ -1,0 +1,21 @@
+//This function now takes a string s, splits it into an array of words, and iterates through each word to find the shortest one. The length of the shortest word is then returned. The provided example usage demonstrates how to call the function and output the result.
+
+
+function findShort(s) {
+    // Split the string into an array of words
+    let words = s.split(' ');
+
+    // Initialize 'min' with the length of the first word
+    let min = words[0].length;
+
+    // Loop through each word in the array
+    for (let i = 0; i < words.length; i++) {
+        // Update 'min' if a shorter word is found
+        if (words[i].length < min) {
+            min = words[i].length;
+        }
+    }
+
+    // Return the length of the shortest word
+    return min;
+}
